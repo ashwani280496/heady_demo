@@ -11,8 +11,9 @@ public class BookModel {
     @SerializedName("abstract")
     private String abstractText;
 
-    @SerializedName("auther")
     private String byline;
+
+    private String published_date;
 
     private  String url;
 
@@ -57,5 +58,13 @@ public class BookModel {
 
     public void setMultimedia(List<MultimediaModel> multimedia) {
         this.multimedia = multimedia;
+    }
+
+    public String getPublished_date() {
+        return published_date;
+    }
+
+    public void setPublished_date(String published_date) {
+        this.published_date = published_date;
     }
 }
